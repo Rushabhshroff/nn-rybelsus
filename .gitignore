@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+.pytest_cache
+env
+local.log
+browserstack.err
