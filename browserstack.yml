@@ -11,9 +11,9 @@ accessKey: YOUR_ACCESS_KEY
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: BrowserStack Samples 
+projectName: Novo Nordisk
 # Set `buildName` as the name of the job / testsuite being run
-buildName: browserstack build
+buildName: build
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
 # buildName. Choose your buildIdentifier format from the available expressions:
 # ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
@@ -36,10 +36,10 @@ platforms:
   - browserName: safari
     osVersion: 16
     deviceName: iPhone 14 Pro
-  - browserName: Chrome
-    os: Windows
-    osVersion: 10
-    browserVersion: 120.0
+  # - browserName: Chrome
+  #   os: Windows
+  #   osVersion: 10
+  #   browserVersion: 120.0
     
 # =======================
 # Parallels per Platform
@@ -58,7 +58,7 @@ parallelsPerPlatform: 3
 # ==========================================
 # Set browserStackLocal to true if your website under test is not accessible publicly over the internet
 # Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction
-browserstackLocal: true # <boolean> (Default false)
+# browserstackLocal: true # <boolean> (Default false)
 # browserStackLocalOptions:
 # Options to be passed to BrowserStack local in-case of advanced configurations
   # localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.
@@ -70,7 +70,7 @@ source: pytest-browserstack:sample-sdk:v1.0
 # ===================
 # Debugging features
 # ===================
-debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
+debug: true # <boolean> # Set to true if you need screenshots for every selenium command ran
 networkLogs: false # <boolean> Set to true to enable HAR logs capturing
 consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)
 # Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)

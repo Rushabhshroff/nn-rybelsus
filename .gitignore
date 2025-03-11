@@ -4,3 +4,6 @@ __pycache__
 env
 local.log
 browserstack.err
+venv/
+commands.txt
+log/
